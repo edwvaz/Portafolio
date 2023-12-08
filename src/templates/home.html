@@ -1,6 +1,6 @@
 {% extends "layout.html" %} {% block content %}
-<div class="jumbotron">
-  <h1 class="display-4">Portafolio Vázquez Edwin</h1>
+<div class="p-5 mb-4 bg-body-tertiary bg-light">
+  <h1 class="display-5 fw-bold">Portafolio Vázquez Edwin.</h1>
   <p class="lead">
     Adéntrate en el mundo del análisis de datos con un científico apasionado que
     desvela insights en los números.
@@ -11,7 +11,63 @@
     inteligentes y soluciones innovadoras en un mundo impulsado por la
     información.
   </p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Adéntrate</a>
+
 </div>
+
+<div class="p-1 my-6 mb-1 bg-body-tertiary bg-light">
+  <h1 class="display-5 text-center">Proyectos.</h1>
+
+
+</div>
+
+<div class="container text-center text-justify">
+  <div class="row align-items-start w-75 mx-auto my-1 servicio-fila text-justify">
+    <div class="col-lg-3 col-md-6 col-sm-12 my-5 icono-wrap text-justify"/>
+      <img src="src\templates\img\descargar.jpg"/>
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1 text-white text-justify" href="{{url_for('analisisprocesos')}}">Análisis de Procesoss</h3>
+        <p class="text-white text-justify">Optimizo eficiencia empresarial, reduciendo costos y mejorando flujos de trabajo.</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 my-5 icono-wrap text-justify">
+      <!--<img src="C:/Users/Edwin/Desktop/Portafolio/src/Imágenes/descargar.jpg" alt="Ciencia de Datos"width="180" height=160> -->
+      <img src="C:/Users/Edwin/Desktop/Portafolio/src/Imágenes/descargar.jpg" class="img-thumbnail" alt="..."/>
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1 text-white text-justify">Ciencia de datos</h3>
+        <p class="text-white text-justify">Transformo datos en conocimiento para tomar decisiones estratégicas.</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 my-5 icono-wrap text-justify">
+      <!--<img src="C:/Users/Edwin/Desktop/Portafolio/src/Imágenes/descargar.jpg" alt="Ciencia de Datos"width="180" height=160> -->
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1 text-white text-justify">Inteligencia Artificial:</h3>
+        <p class="text-white text-justify">Creo soluciones avanzadas mediante IA para automatizar y mejorar procesos.</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 my-5 icono-wra text-justify">
+      <!--<img src="C:/Users/Edwin/Desktop/Portafolio/src/Imágenes/descargar.jpg" alt="Ciencia de Datos"width="180" height=160> -->
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1 text-white text-justify">Curiosidades.</h3>
+        <p class="text-white text-justify">Exploro fascinantes ideas en tecnología y ciencia, compartiendo descubrimientos únicos.</p>
+      </div>
+    </div> 
+    
+  </div>
+</div>
+
+
+
+<section id="About">
+  <div class="container m-auto text-center text-white" id="equipo">
+      <h1 class="mb-5 fs-2">Equipo pequeño con <span class="text-primary">resultados Grandes</span>.</h1>
+      <p class="fs-4 text-white text-center">Estudiante avanzado de ingeniería electromecánica con más de 4 años como Analista de procesos Jr. especializado en el desarrollo de manuales para la mejora continua de procesos. Con conocimientos en ciencia de datos, Python, SQL, GIT, estructura de datos, algoritmos. Mi experiencia en detectar fallas y solucionarlas me permitieron desarrollar habilidades como analizar problemas, pensamiento lateral y obtener una mente abierta y ágil. Nivel de Inglés: intermedio.</p>
+  </div>
+
+  <div class="mt-5 text-center">
+      <img id="img-equipo" src="./img/equipo.jpg" alt="equipo">
+  </div>
+</section>
+
+
 
 {% endblock %}
