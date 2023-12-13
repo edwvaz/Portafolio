@@ -11,12 +11,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-<!--- Para los iconos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-
-
-
+    <!--- Para los iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
     <!--CUSTOM CSS-->
     <link
@@ -25,7 +24,8 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-dark">  <!-- "nav-expand" nos dice a partir de que tamaño de pantalla se va a colapsar nuestro Menú, o sea si tenemos nav-expand-lg significa que a partir de tamaño lg se va a colapsar la botonera-->
+    <nav class="navbar navbar-expand-sm bg-dark">
+      <!-- "nav-expand" nos dice a partir de que tamaño de pantalla se va a colapsar nuestro Menú, o sea si tenemos nav-expand-lg significa que a partir de tamaño lg se va a colapsar la botonera-->
       <div class="container-fluid bg-dark">
         <a class="navbar-brand text-white" href="/">Home</a>
         <button
@@ -49,23 +49,54 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="{{url_for('proyectos')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="{{url_for('proyectos')}}"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Proyectos</a
+              >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{{url_for('analisisprocesos')}}">Análisis de Procesos</a></li>
-                <li><a class="dropdown-item" href="{{url_for('cienciadedatos')}}">Ciencia de Datos</a></li>
-                <li><a class="dropdown-item" href="{{url_for('inteligenciaartificial')}}">Inteligencia Artificial</a></li>
-                <li><a class="dropdown-item" href="{{url_for('dataengineer')}}">Data Engineer</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="{{url_for('curiosidades')}}">Curiosidades</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{{url_for('analisisprocesos')}}"
+                    >Análisis de Procesos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{url_for('cienciadedatos')}}"
+                    >Ciencia de Datos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{{url_for('inteligenciaartificial')}}"
+                    >Inteligencia Artificial</a
+                  >
+                </li>
+                <!--<li><a class="dropdown-item" href="{{url_for('dataengineer')}}">Data Engineer</a></li> -->
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="{{url_for('curiosidades')}}"
+                    >Curiosidades</a
+                  >
+                </li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="{{url_for('curriculum')}}">Descargar CV</a>
+              <a class="nav-link text-white" href="{{url_for('curriculum')}}"
+                >Descargar CV</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="{{url_for('contacto')}}">Contacto</a>
+              <a class="nav-link text-white" href="{{url_for('contacto')}}"
+                >Contacto</a
+              >
             </li>
             <li></li>
           </ul>
@@ -73,25 +104,18 @@
       </div>
     </nav>
 
-    <div class="container p-4">
-    {% block content %} {% endblock %}
-    </div>
-
-
-
-
+    <div class="container p-4">{% block content %} {% endblock %}</div>
 
     <!-- <script src="C:\Users\Edwin\Desktop\Portafolio\src\templates\Js"></script>
     <script src="C:\Users\Edwin\Desktop\Portafolio\src\templates\jquery\jquery-3.7.1.min.js"></script> -->
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
-      <!--<footer>
+  <!--<footer>
         <div class="container-fluid">
 
           <div class="row p-5 bg-dark text-white">
@@ -116,16 +140,17 @@
         </div>
       </footer>-->
 
-
-      <footer class="w-100 bg-dark text-white d-flex  align-items-center justify-content-center flex-wrap">
-        <p class="fs-5 px-3  pt-3">Vazquez, Edwin &copy; Copyright - All rights reserved 2023.</p>
-        <div id="iconos" >
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-mail"></i></a>
-            <a href="#"><i class="bi bi-intagram"></i></a>  
-        </div>
-      </footer>
-      <script src="{{url_for('static', filename='js/main.js')}}"></script>
-
-    
+  <footer
+    class="w-100 bg-dark text-white d-flex align-items-center justify-content-center flex-wrap"
+  >
+    <p class="fs-5 px-3 pt-3">
+      Vazquez, Edwin &copy; Copyright - All rights reserved 2023.
+    </p>
+    <div id="iconos">
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-mail"></i></a>
+      <a href="#"><i class="bi bi-intagram"></i></a>
+    </div>
+  </footer>
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </html>
