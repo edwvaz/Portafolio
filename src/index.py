@@ -21,6 +21,7 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
+
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -140,5 +141,5 @@ def curriculum():
     return render_template("curriculum.html")
 
 if __name__ == "__main__":  # esta es una validación para asegurarnos que estamos en la pagina principal
-    app.run(debug=True)  # debug=True con esto decimos que nuestra pagina va a a estar en un periodo de pruebay así no tenemos que estar todo el tiempo ejecutando "python index.py" y se va actualizando solo, luego en producción hay que ponerle off para que no se edite
+    app.run(host='0.0.0.0', port=5000,debug=False)  # debug=True con esto decimos que nuestra pagina va a a estar en un periodo de pruebay así no tenemos que estar todo el tiempo ejecutando "python index.py" y se va actualizando solo, luego en producción hay que ponerle off para que no se edite
     
